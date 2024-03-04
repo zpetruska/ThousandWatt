@@ -2,12 +2,11 @@ spring:
   docker:
     compose:
       enabled: false
-  security:
-    oauth2:
-      client:
-        registration:
-          strava:
-            client-id: 91688
-            client-secret: 49c375d1aeda5799911d5bb9f3df42f2c77bb14b
-            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
-            scope: read,activity:write
+#strava:
+#  permission:
+#    deleteActivity: false
+#    writeComment: false
+#    giveKudos: false
+#    webhooksEndpoint: false
+#    challengesEndpoint: false
+#    beaconEndpoint: false
